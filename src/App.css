@@ -13,13 +13,14 @@ body {
 }
 
 /*** MENU LINKS ***/
+
+.navbar {
+  z-index: 100;
+}
+
 .nav a.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
-}
-
-.container {
-  z-index: 100;
 }
 
 .nav ul li {
@@ -29,11 +30,11 @@ body {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+  text-transform: capitalize;
   color: var(--primary-white) !important;
   border-top:.1875rem solid var(--primary-dark);
   font-family: "Roboto Condensed", sans-serif;
   z-index: 3;
-  
 }
 
 .navbar-brand {
@@ -51,8 +52,7 @@ body {
   border-top: .1875rem solid var(--primary-orange);
 }
 
-
-@media(max-width: 768px) {
+@media(max-width: 1200px) {
   .navbar-brand img {
     width: 90%;
     height: 75%;
@@ -103,7 +103,6 @@ body {
   font-size: 2rem;
   color: var(--primary-white);
 }
-
 
 /*** MAIN OFFER BUTTON ***/
 .btn-main-offer {
